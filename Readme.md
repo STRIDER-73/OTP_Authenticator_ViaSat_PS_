@@ -17,7 +17,7 @@ smtplib module, which defines an SMTP client session object that can be used to 
 an SMTP or ESMTP listener daemon. 
 Then generating an OTP by using random and sending that using smtplib module.
 Logics for OTP verification, then Account creation, implementing 2FA by asking the user to sign-up with a password.
-The Email-ID and the password are stored in a CSV file, and the password are hashed using MD5.
+The Email-IDs and the passwords are stored in a CSV file, and the password are hashed using MD5.
 The CSV file is maintained and run through using the package pandas.
 
 ### Script Files
@@ -25,19 +25,22 @@ The CSV file is maintained and run through using the package pandas.
 #### 1. Accounts.py
 Has the functions such as ```signup()```,```reset()```,```login()```, which further uses the functions from the various other scripts.
 
-#### 2. MainDriver
+#### 2. MainDriver.py
 Driver of this terminal driven app, self-explanatory.
 
-#### 3. Menu
+#### 3. Menu.py
 
-#### 4.OTP_Auth
-OTP generation and verification, the soul of this app, has the fuction ```OTPAUTH(email_id,purpose)```.
+#### 4.OTP_Auth.py
+OTP generation and verification, the soul of this app, has the function ```OTPAUTH(email_id,purpose)```.
 
 
-#### 5. Password_Validity
+#### 5. Password_Validity.py
 Checks if the password passes various required conditions, has the function ```password_check(password)```.
 
 ### Database
 
-The Username and Password are stored and managed in a CSV file ```credentials.csv```. The passwords are hashed using MD5 and
+The Usernames and Passwords are stored and managed in a CSV file ```credentials.csv```. The passwords are hashed using MD5 and
 the CSV file is maintained and run through using the package pandas.
+
+### Run
+Running the MainDriver will be sufficient, creating the csv file ```credentials.csv``` is advised before executing the scripts.
