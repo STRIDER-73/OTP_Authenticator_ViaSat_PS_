@@ -14,7 +14,7 @@ def signup():
               The alphabet must be between [a-z]
               At least one alphabet should be of Upper Case [A-Z]
               At least 1 number or digit between [0-9].
-              At least 1 character from [ _ or @ or $ ]. 
+              At least 1 character from [ _ or @ or $ or &]. 
         """
     print(msg)
     pwd = stdiomask.getpass()
@@ -43,7 +43,7 @@ def signup():
 
 
 def login():
-    email = input("Enter email:")
+    email = input("Enter email: ")
     filename = 'credentials.csv'
     df = pd.read_csv(filename)
     flag=0
@@ -96,7 +96,7 @@ def reset():
               The alphabet must be between [a-z]
               At least one alphabet should be of Upper Case [A-Z]
               At least 1 number or digit between [0-9].
-              At least 1 character from [ _ or @ or $ ]. 
+              At least 1 character from [ _ or @ or $ or &]. 
         """
     print(msg)
     pwd = stdiomask.getpass("Enter your new Password: ")

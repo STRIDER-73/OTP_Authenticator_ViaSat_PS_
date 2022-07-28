@@ -9,7 +9,7 @@ sole purpose of an OTP is to verify the identity of a user by sending a unique p
 Create an application for the task of OTP verification using Python.
 You can write a program to send emails with OTP as message, then verify it with the user input!
 
-### Aproach
+### Approach
 The goal was to create an OTP authenticator by using python.
 I basically approached from bottom and worked my way up.
 Basically sending the email through the terminal was priority. I used SMTP protocol, where Python provides 
